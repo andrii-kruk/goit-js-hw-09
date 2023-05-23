@@ -31,7 +31,11 @@ function onCreatePromise(event) {
   const step = Number(refs.step.value);
   const amount = Number(refs.amount.value);
 
+<<<<<<< Updated upstream
+  for (let i = 0; i < amount; i += 1) {
+=======
   for (let i = 0; i <= amount; i += 1) {
+>>>>>>> Stashed changes
     const promisesDelay = delay + step * i;
 
     createPromise(i, promisesDelay)
