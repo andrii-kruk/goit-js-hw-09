@@ -31,7 +31,7 @@ function onCreatePromise(event) {
   const step = Number(refs.step.value);
   const amount = Number(refs.amount.value);
 
-  for (let i = 0; i <= amount; i += 1) {
+  for (let i = 0; i < amount; i += 1) {
     const promisesDelay = delay + step * i;
 
     createPromise(i, promisesDelay)
